@@ -5,12 +5,13 @@ for i in range(current_streams):
     flow = int(input())
     stream_flow.append(flow)
 
-while True:
+done = False
+while not done:
     command = int(input())
 
     #End of splits and joins for the streams
     if command == 77:
-        done
+        done = True
 
     #Split of streams 
     elif command == 99:
