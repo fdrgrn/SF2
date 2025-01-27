@@ -10,7 +10,7 @@ while True:
 
     #End of splits and joins for the streams
     if command == 77:
-        break
+        done
 
     #Split of streams 
     elif command == 99:
