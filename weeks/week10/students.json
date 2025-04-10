@@ -1,0 +1,7 @@
+{
+    "students" : [
+        {"first_name": "si", "last_name": "ba"},
+        {"first_name": "fe" , "last_name": "go"},
+        {"first_name": "pe", "last_name": "go"}
+    ]
+}

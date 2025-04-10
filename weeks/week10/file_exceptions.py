@@ -11,6 +11,7 @@ else:
 input_file = open('story_file.txt', 'r')
 temp_list = input_file.readlines()
 output_file.writelines(temp_list)
+
 count = 0
 for line in temp_list:
     print(line)

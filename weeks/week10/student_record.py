@@ -11,3 +11,4 @@ student_dict = {'name':'Lucy','year':'1',"college": 'Dawson' }
 output_file = open('butterflies.json', 'w')
 d = {'painted lady': 1, 'monarch': 12}
 json.dump(d, output_file)
+output_file.close()
