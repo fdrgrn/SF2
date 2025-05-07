@@ -47,12 +47,28 @@ class Fraction:
     def __eq__(self, other_fraction: Fraction) -> bool:
         return self.numerator / self.demominator == other_fraction.numerator / other_fraction.demominator
     
+    def __ne__(self, other_fraction: Fraction) -> bool:
+        return self.numerator / self.demominator != other_fraction.numerator / other_fraction.demominator
+    
     def __lt__(self, other_fraction: Fraction) -> bool:
         return self.numerator / self.demominator < other_fraction.numerator / other_fraction.demominator
     
+    def __gt__(self, other_fraction: Fraction) -> bool:
+        return self.numerator / self.demominator > other_fraction.numerator / other_fraction.demominator
+    
+    def __le__(self, other_fraction: Fraction) -> bool:
+        return self.numerator / self.demominator <= other_fraction.numerator / other_fraction.demominator
+    
+    def __ge__(self, other_fraction: Fraction) -> bool:
+        return self.numerator / self.demominator >= other_fraction.numerator / other_fraction.demominator
+    
+    def __float__(self):
+        return self.numerator / self.demominator
+    
+    
 
 
-frac1 = Fraction(1, 12)
+frac1 = Fraction(11, 12)
 print(frac1)
 frac2 = Fraction(11, 12)
 print(frac1 + frac2)
