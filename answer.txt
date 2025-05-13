@@ -1,0 +1,27 @@
+Feodor G, 2442384
+
+Find the time complexity of the following function:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+def count_function(n):
+    count = 0
+    i = 1
+    while i < n:
+        j = n
+        while j > 0:
+            count += 1
+            j //= 2
+        i = i * 2
+    return count
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+a) n^2
+b) n
+c) n log n
+d) log^2 n
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ANSWER: d) log^2 n
+The outer while loop iterates with  i = i * 2, so
+log n times. It's inner loop also runs log n times
+due to j //= 2. Multiplying these together, you get
+log^2 n.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
